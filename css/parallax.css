@@ -1,0 +1,16 @@
+.parallax_wrap {
+    min-height : 300px;
+    position : relative;
+    overflow : hidden;
+}
+.parallax_content {
+    position:relative;
+    z-index:1;
+}
+.parallax_img {
+    background-size:cover;
+    background-position:top;
+    position:absolute;
+    top:0;
+    width:100%
+}
