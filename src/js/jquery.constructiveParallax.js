@@ -1,9 +1,9 @@
 (function($) {
 
-    $.fn.constructiveParallax = function( options ) {
+    $.fn.constructiveParallax = function(options) {
 
         var settings = $.extend({
-            "speed" : "15"
+            "speed": "15"
         }, options);
 
         return this.each(function() {
@@ -20,32 +20,32 @@
                 var pheight = self.height();
 
                 self.children(".parallax_img").css({
-                    "height" : pheight*2,
-                    "top" : -pheight
+                    "height": pheight * 2,
+                    "top": -pheight
                 });
 
                 var st = $(document).scrollTop();
                 var sp = self.offset().top - $(window).height();
                 var ob = self.offset().top + pheight;
-                var sr = st-sp;
+                var sr = st - sp;
 
-                if(st >= sp && st <= ob) {
+                if (st >= sp && st <= ob) {
 
                     self.children(".parallax_img").css({
-                        "transform" : "translate3d(0px, " + sr /settings.speed + "%, .01px)",
-                        "-webkit-transform" : "translate3d(0px, " + sr /settings.speed + "%, .01px)"
+                        "transform": "translate3d(0px, " + sr / settings.speed + "%, .01px)",
+                        "-webkit-transform": "translate3d(0px, " + sr / settings.speed + "%, .01px)"
                     });
 
                 };
 
             };
 
-            $(window).scroll(function() {
+            $(window).on('scroll', function() {
                 parallaxInit();
-            }).load(function() {
+            }).on('load', function() {
                 parallaxInit();
             });
-            $("*").resize(function() {
+            $("*").on('resize', function() {
                 parallaxInit();
             });
 
