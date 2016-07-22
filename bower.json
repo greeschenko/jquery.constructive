@@ -1,19 +1,19 @@
 {
-  "name": "gulp-starter",
-  "description": "gulp starter with sass js img compiling",
+  "name": "jquery.constructive",
+  "version": "0.0.1",
+  "description": "jquery full page effects",
   "main": "dist/index.html",
   "authors": [
     "Oleksiy Hryshchenko"
   ],
   "license": "MIT",
   "keywords": [
-    "gulp",
-    "js",
-    "sass",
-    "autoprefixer",
-    "imagemin"
+    "jquery",
+    "page effects",
+    "parallax",
+    "telescope"
   ],
-  "homepage": "",
+  "homepage": "https://github.com/greeschenko/jquery.constructive",
   "private": false,
   "ignore": [
     "**/.*",
